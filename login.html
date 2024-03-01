@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <title> TRAVEL PLANNER </title>
+    <meta name="google-signin-client_id" content="your-client-id-goes-here">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script>
+        function onSignIn(googleUser) {
+            // get user profile information
+            console.log(googleUser.getBasicProfile())
+        }
+    </script>
+</head>
+<style>
+    body {
+        background-image: url(https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/09/Panchmari.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    container {
+        background: white;
+    }
+    
+    h1 {
+        font-family: cursive;
+        /* background-color: rgb(67, 9, 226); */
+        font-size: xxx-large;
+        text-align: center;
+    }
+    
+    h2,
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h1>AAPKA TRAVEL PLANNER </h1>
+    <br>
+
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <container>
+        <h2>LOGIN DETAILS</h2>
+        <P>USERNAME : <input type="text" name="username" required></P>
+        <p>PASSWORD : <input type="password" name="password" id="password"></p>
+        <p> <input type="submit" value="Log in">
+    </container>
+
+
+    </p>
+
+
+
+</body>
+
+</html>
